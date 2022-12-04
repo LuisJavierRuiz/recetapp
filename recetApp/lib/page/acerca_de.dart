@@ -43,9 +43,7 @@ class _AcercaDeWidgetState extends State<AcercaDeWidget>
         centerTitle: false,
         elevation: 2,
       ),
-      body: GestureDetector(
-        onTap: () => FocusScope.of(context).unfocus(),
-        child: Align(
+      body: Align(
           alignment: const AlignmentDirectional(0.05, 0),
           child: Container(
             width: double.infinity,
@@ -55,7 +53,7 @@ class _AcercaDeWidgetState extends State<AcercaDeWidget>
               image: DecorationImage(
                 fit: BoxFit.none,
                 image: AssetImage(
-                    'fondo_acercade'
+                  '../assets/fondo_acercade.jpg'
                 ),
               ),
               shape: BoxShape.rectangle,
